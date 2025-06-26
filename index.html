@@ -13,8 +13,33 @@
         font-family: Monaco, monospace;
     }
 
+    .integrantes {
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .integrantes ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .entrevista p {
+        text-align: center;
+    }           
+
     h2 {
         font-family: Lucida-Handwriting, cursive;
+        text-align: center;
+    }
+
+    .video-entrevista {
+        display: block;
+        margin: 0 auto;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
     }
 
     .menu {
@@ -29,6 +54,10 @@
     .menu li {
         margin: 8px 0;
         font-size: 18px;
+    }
+
+    .recomendacion {
+        text-align: center;
     }
 
 </style>
@@ -46,12 +75,14 @@
         <p><a href="https://www.instagram.com/losblanquitoos/?hl=es-la" target="_blank">Los Blanquito</a> son un grupo de personas q hacen musica we no mames, q mas iban hacer we,
         hablando en serio "Los Blanquito" es un grupo musical dominicano que se ha destacado en el género de la bachata urbana.
         Originalmente, el grupo estaba compuesto por:</p>
-        <ul id="integrantes">
-            <li><a href="https://www.instagram.com/betopelaezrd/?hl=es-la" target="_blank">Beto Pelaez</a></li>
-            <li><a href="https://www.instagram.com/socofrancis/" target="_blank">Soco Francis</a></li>
-            <li><a href="https://www.instagram.com/elsholivery/" target="_blank">El Sholivery</a></li>
-            <li><a href="https://www.instagram.com/leanmusic_official/?hl=es-la" target="_blank">Lean</a></li>
-        </ul>
+        <div class="integrantes">
+            <ul>
+                <li><a href="https://www.instagram.com/betopelaezrd/?hl=es-la" target="_blank">Beto Pelaez</a></li>
+                <li><a href="https://www.instagram.com/socofrancis/" target="_blank">Soco Francis</a></li>
+                <li><a href="https://www.instagram.com/elsholivery/" target="_blank">El Sholivery</a></li>
+                <li><a href="https://www.instagram.com/leanmusic_official/?hl=es-la" target="_blank">Lean</a></li>
+            </ul>
+        </div>
         <p>Quienes ganaron el galardón de "Revelación del Año" en los Premios Soberano de 2019.
         Sin embargo, es importante mencionar que el grupo ha experimentado cambios en su alineación. 
         Informaciones recientes indican que integrantes como Soco Francis han anunciado su separación para seguir caminos distintos en sus carreras musicales.
@@ -72,11 +103,11 @@
         </p>
     </div>
 
-    <div id="Entrevista">
+    <div id="Entrevista" class="entrevista">
         <h2>Entrevista</h2>
         <p><a href="https://www.youtube.com/watch?v=yr0q5UG8EF0" target="_blank">https://www.youtube.com/watch?v=yr0q5UG8EF0</a></p>
 
-        <iframe width="952" height="378" 
+        <iframe class="video-entrevista" width="952" height="378" 
             src="https://www.youtube.com/embed/yr0q5UG8EF0" 
             title="La entrevista más sincera en la historia de &quot;Lo Blanquito&quot;" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -107,12 +138,14 @@
         </p>
     </div>
 
-    <div id="Recomendacion">
-        <p>Mira esta misma pagina pero mejorada: <a href="./Inicios reworked.html" target="_blank">Lo Blanquito Reworked</a></p>
+    <div id="Recomendacion" class="recomendacion">
+        <p>Mira esta misma pagina pero mejorada:<br> 
+            <a href="./index.html" target="_blank">Lo Blanquito Reworked</a>
+        </p>
     </div>
 
     <div id="Agradecimientos" class="agradecimientos">
-        <h3 style="font-size: 1em;">Muchas gracias por ver esta pagina!! 
+        <h3 style="font-size: 1em;">Muchas gracias por ver esta pagina!!<div class="background-image"></div> 
             <span 
                 style="font-size: 0.7em; 
                 font-weight: normal;">(Estoy iniciando)<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -120,11 +153,11 @@
         </h3>
     </div>
 
-    <div id="menu" class="menu">
-        <h2>
-            <a href="#titulo">Volver a inicio</a>
-        </h2>
+    <h2>
+        <a href="#titulo">Volver a inicio</a>
+    </h2>
 
+    <div id="menu" class="menu">
         <ol>
             <li><a href="#intro">¿Quienes son?</a></li>
             <li><a href="#Generos">Géneros de música</a></li>
