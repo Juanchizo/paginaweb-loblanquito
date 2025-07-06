@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es"></html>
-
 <style>
     a {
         color: #2d3091;
@@ -68,8 +67,16 @@
         margin: 0 auto;
     }
 
+    .imagenes2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
     img {
         display: block;
+        align-items: center;
+        border: 2px solid #888ff0;
         margin: 0 auto;
     }
 
@@ -146,11 +153,11 @@
         </iframe>
     </div>
 
-    <div id="Imagenes">
+    <div id="Imagenes" class="imagenes">
         <h2>Imagenes</h2>
 
         <p>
-            <a href="https://deultimominuto.net/entretenimiento/anuncian-fin-del-grupo-lo-blanquito/" target="_blank">
+            <div class="imagenes2"><a href="https://deultimominuto.net/entretenimiento/anuncian-fin-del-grupo-lo-blanquito/" target="_blank">
                 <img 
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkIknSJeW8YRNjnIwlSjplVzXPwumSvlBJWQ&s.jpg" 
                     alt="Los integrantes de los blanquito"
@@ -166,6 +173,7 @@
                     width="300" height="200"
                 >
             </a>
+            </div>
         </p>
     </div>
 
